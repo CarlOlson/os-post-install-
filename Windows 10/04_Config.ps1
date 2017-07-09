@@ -55,7 +55,7 @@ function DisableDefender()
 ShowFileExtensions
 ShowHiddenFiles
 ShowTaskbarIcons
-RemapKeys
+# RemapKeys
 DisableDefender
 Stop-Process -processName: Explorer
 Pause
