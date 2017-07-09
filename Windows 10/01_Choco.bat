@@ -12,3 +12,5 @@ choco install mpc-hc -y
 choco install mpv -y
 
 choco install msiafterburner -y
+
+choco install anonymousPro -y
