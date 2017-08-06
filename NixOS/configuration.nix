@@ -10,7 +10,7 @@
   nixpkgs.config.allowUnfree = true;
 
   i18n = {
-    consoleFont = "anonymousPro";
+    consoleFont = "Lat2-Terminus16";
     defaultLocale = "en_US.UTF-8";
   };
 
