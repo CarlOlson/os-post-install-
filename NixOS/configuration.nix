@@ -108,6 +108,11 @@
   };
 
   services.samba.enable = true;
+  services.samba.extraConfig = "
+    unix extensions = no
+    follow symlinks = yes
+    wide links = yes
+  ";
   services.samba.shares = {
     samba = {
       path = "/samba";
