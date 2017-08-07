@@ -112,15 +112,13 @@
     unix extensions = no
     follow symlinks = yes
     wide links = yes
+    map to guest = Bad User
   ";
   services.samba.shares = {
     samba = {
       path = "/samba";
-      "read only" = "yes";
-      writable = "no";
       public = "yes";
-      browsable = "yes";
-      "guest ok" = "yes";
+      writeable = "no";
     };
   };
 
