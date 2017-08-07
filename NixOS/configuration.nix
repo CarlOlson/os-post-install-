@@ -22,7 +22,7 @@
   boot.loader.grub.useOSProber = true;
 
   environment.systemPackages = with pkgs; [
-    coreutils git nox oh-my-zsh tree ts wget zsh
+    coreutils git nox oh-my-zsh tree ts wget xclip zsh
     p7zip unrar unzip
     ffmpeg-full youtube-dl
 
