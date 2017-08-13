@@ -26,9 +26,11 @@
     p7zip unrar unzip
     ffmpeg-full youtube-dl
 
-    emacs25 pavucontrol qbittorrent yakuake
+    pavucontrol qbittorrent yakuake
 
     exfat ntfs3g
+
+    (import ./emacs.nix { inherit pkgs; })
   ];
 
   services.xserver = {
