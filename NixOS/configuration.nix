@@ -80,13 +80,13 @@
     enableAutosuggestions = true;
     enableCompletion = true;
 
-    oh-my-zsh = {
+    ohMyZsh = {
       enable = true;
       plugins = ["git" "wd"];
       theme = "sunrise";
     };
 
-    syntax-highlighting = {
+    syntaxHighlighting = {
       enable = true;
       highlighters = ["main" "brackets"];
     };
