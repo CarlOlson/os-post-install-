@@ -19,7 +19,7 @@ in
     helm
     helm-idris
     helm-nixos-options
-    hexrgb
+    # hexrgb
     idris-mode
     magit
     magit-filenotify
