@@ -14,3 +14,5 @@ choco install mpv -y
 choco install msiafterburner -y
 
 choco install anonymousPro -y
+
+pause

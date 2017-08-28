@@ -6,3 +6,5 @@ dism /online /Disable-Feature /FeatureName:WindowsMediaPlayer /NoRestart
 dism /online /Disable-Feature /FeatureName:Windows-Defender /Remove /NoRestart
 
 dism /online /Enable-Feature /FeatureName:Microsoft-Windows-Subsystem-Linux /NoRestart
+
+pause

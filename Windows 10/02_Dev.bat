@@ -11,3 +11,5 @@ REM add emacs shortcut
 
 REM install git
 choco install git -y
+
+pause
