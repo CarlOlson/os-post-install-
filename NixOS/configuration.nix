@@ -145,4 +145,9 @@
     device = "/dev/disk/by-uuid/F220C70420C6CF33";
     fsType = "ntfs";
   };
+
+  fileSystems."/mnt/Backup81" = {
+    device = "/dev/disk/by-uuid/7ecd53b5-42a2-41c8-baf5-5ff8aa22e1ef";
+    fsType = "ext4";
+  };
 }
