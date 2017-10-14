@@ -109,6 +109,8 @@
     ];
   };
 
+  services.mongodb.enable = true;
+
   services.samba.enable = true;
   services.samba.extraConfig = "
     unix extensions = no
