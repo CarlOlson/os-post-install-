@@ -3,7 +3,7 @@
 {
   imports = [ ./hardware-configuration.nix ];
 
-  system.stateVersion = "17.03";
+  system.stateVersion = "17.09";
 
   networking.hostName = "nixos";
 
@@ -25,6 +25,7 @@
     coreutils git nox oh-my-zsh tree ts wget xclip zsh
     p7zip unrar unzip
     ffmpeg-full youtube-dl
+    mongodb-tools
 
     pavucontrol qbittorrent yakuake
 
@@ -59,6 +60,7 @@
 
   nix.maxJobs = 4;
   nix.buildCores = 4;
+  nix.useSandbox = true;
 
   programs.chromium = {
     enable = true;
@@ -109,6 +111,15 @@
     ];
   };
 
+  services.hydra = {
+    enable = true;
+    port = 8080;
+    listenHost = "localhost";
+    hydraURL = "hydra.example.org";
+    notificationSender = "hydra@example.org";
+  };
+
+  services.postgresql.enable = true;
   services.mongodb.enable = true;
 
   services.samba.enable = true;
