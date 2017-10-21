@@ -38,7 +38,7 @@
     enable = true;
     layout = "us";
     autorun = true;
-    videoDrivers = [ "ati" ];
+    videoDrivers = [ "nvidia" ];
     displayManager.sddm.enable = true;
     desktopManager.plasma5.enable = true;
   };
