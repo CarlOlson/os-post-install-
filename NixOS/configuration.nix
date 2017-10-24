@@ -49,6 +49,7 @@
     home = "/home/carl";
     description = "Carl Olson";
     extraGroups = [ "wheel" ];
+    openssh.authorizedKeys.keys = [ (import ./osx_rsa.pub) ];
   };
 
   sound.mediaKeys = {
@@ -121,6 +122,11 @@
 
   services.postgresql.enable = true;
   services.mongodb.enable = true;
+
+  services.openssh = {
+    enable = true;
+    passwordAuthentication = false;
+  };
 
   services.samba.enable = true;
   services.samba.extraConfig = "
