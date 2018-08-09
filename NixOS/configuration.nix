@@ -3,7 +3,7 @@
 {
   imports = [ ./hardware-configuration.nix ];
 
-  system.stateVersion = "17.09";
+  system.stateVersion = "18.03";
 
   networking.hostName = "nixos";
 
